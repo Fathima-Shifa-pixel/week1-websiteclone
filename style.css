@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+body{
+  width:100vw;
+  height: 100vh;
+  background: rgb(252,252,252);
+}
+header{
+  background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+}
+nav .app_link a{
+   text-decoration: none;
+   color: #fff;
+   font-weight: 500;
+   font-size: 1rem;
+}
+nav .nav_items ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav .nav_items ul li a{
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.content_wrapper{
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.content_wrapper img{
+   width: 300px;
+   height: 60px;
+}
+.content_wrapper h1{
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+.content_wrapper h1 span{
+  font-weight: 600;
+}
+.search_container{
+  display: flex;
+  background: #fff;
+  align-items: center;
+  height: 3.4rem;
+  width: 55%;
+  border-radius: 8px;
+}
+.search_container .left_search, .search_container .right_search{
+  display: inline-flex;
+  padding: 0 1rem;
+}
+.search_container .left_search{
+  width: 30%;
+  border-right: 2px solid rgb(189,188,188);
+}
+.search_container .right_search{
+  width:70%;
+}
+.search_container input{
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  color: gray;
+  width: 100%;
+  margin-left: 6px;
+}
+.search_container .left_search i{
+  color: rgb(240,125,125);
+  font-size: 20px;
+}
+.search_container .right_search i{
+  color: rgb(189,188,188);
+  font-size: 20px;
+}
+
+/*........................order section css......................*/
+
+.order-section{
+  height:fit-content;
+  width: 95%;
+  margin:0 auto;
+  text-align: center;
+}
+.order-section .order{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 20px;
+  width: 100%;
+  margin-top:4%;
+  margin-bottom: 80px;
+  color: black;
+  text-align: left;
+}
+.order .card{
+  width: 30%;
+  margin: 12px;
+  border-radius: 10px;
+  border: 1px solid rgb(209,207,207);
+  transition: transform 0.5s;
+  position: relative;
+}
+.order .card a img{
+  width: 100%;
+  height: 200px;
+  border-radius:8px ;
+}
+.order .card:hover{
+  transform: scale(1.1);
+}
+
+.order .card .content{
+  text-align: left;
+  font-weight: 100;
+  width: 100%;
+  object-fit: cover;
+  padding: 0 13px;
+  position:absolute;
+  bottom: 0;
+  padding-top: 90;
+  background: #fff;
+}
+.order .card .content .heading{
+  font-size: 1.9rem;
+  margin: 10px 0;
+  color: black;
+}
+.order .card .content .text{
+  
+
+  text-align: left;
+  color: black;
+  font-weight: 500;
+}
+.menu-icon{
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+/*..................media query for small screen size...............*/
+
+@media only screen and(max-width:768px){
+   .menu-icon{
+    display: block;
+   }
+   nav .app_link a,nav .nav_items ul{
+    display: none;
+   }
+   .content_wrapper h1{
+    font-size: 1.5rem;
+   }
+   .content_wrapper img{
+    width: 250px;
+   }
+}

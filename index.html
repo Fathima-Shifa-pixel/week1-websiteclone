@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/png;base64,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">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="app_link">
+        <a href="">Get the App</a>
+        <span class="menu-icon">&#9776</span>
+      </div>
+
+      <div class="nav_items">
+        <ul>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Add Restaurant</a></li>
+          <li><a href="">login</a></li>
+          <li><a href="">sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="content_wrapper">
+      <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+      alt=""/>
+      <h1>Discover the best food & drinks in <span>kannur</span></h1>
+
+      <div class="search_container">
+        <div class="left_search">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Kannur">
+        </div>
+        <div class="right_search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+        </div>
+     </div>
+ </div>
+</header>  
+    <!--.................ORDER SECTION.................-->
+    <div class="order-section">
+     <div class="order">
+      <div class="card">
+         <a href=""><img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt=""</a>
+       
+         <div class="content">
+          <p class="heading">Order Online</p>
+          <p class="text">Stay home and order to your doorstep</p>
+        </div>
+      </div>
+     </div> 
+    </div>
+</body>
+</html>
